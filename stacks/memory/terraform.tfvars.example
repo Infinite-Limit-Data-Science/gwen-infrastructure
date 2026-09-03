@@ -1,0 +1,5 @@
+aws_profile       = "atlantic_genetics"
+aws_region        = "us-east-1"
+environment       = "dev"
+event_expiry_days = 30
+enable_episodic   = false

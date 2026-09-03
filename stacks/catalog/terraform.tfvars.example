@@ -1,0 +1,8 @@
+aws_profile               = "atlantic_genetics"
+aws_region                = "us-east-1"
+environment               = "dev"
+tenant_slug               = "florida-blue"
+bedrock_prompt_model_id   = "replace-with-approved-bedrock-model-id"
+enable_document_target    = true
+enable_web_target         = true
+reconcile_revision        = "1"

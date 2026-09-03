@@ -1,0 +1,9 @@
+aws_profile        = "atlantic_genetics"
+aws_region         = "us-east-1"
+environment        = "dev"
+tenant_slug        = "florida-blue"
+reconcile_revision = "1"
+
+# Set this for the first dev migration if the existing Registry should be
+# adopted instead of creating a tenant-suffixed replacement.
+# registry_name = "gwen-specialists-dev"

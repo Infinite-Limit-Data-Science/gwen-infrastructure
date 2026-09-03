@@ -1,0 +1,16 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.auto.tfvars
+terraform.tfvars
+backend.tf
+*.backend.hcl
+.certs/
+.secrets/
+*.env
+!*.env.example
+__pycache__/
+*.pyc
+/gwen-chat

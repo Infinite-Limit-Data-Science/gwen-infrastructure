@@ -1,0 +1,11 @@
+aws_profile  = "atlantic_genetics"
+aws_region   = "us-east-1"
+environment  = "dev"
+tenant_slug  = "florida-blue"
+policy_mode  = "ENFORCE"
+
+# For the first dev state migration, uncomment these values to retain the
+# resource names created by the retired monolithic root.
+# gateway_name       = "gwen-m365-dev"
+# gateway_role_name  = "gwen-m365-gateway-dev"
+# policy_engine_name = "gwen_m365_policy_dev"

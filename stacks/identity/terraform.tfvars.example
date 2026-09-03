@@ -1,0 +1,13 @@
+aws_profile              = "replace-with-aws-profile"
+aws_region               = "us-east-1"
+environment              = "dev"
+tenant_slug              = "replace-with-aws-tenant-slug"
+entra_tenant_id          = "replace-with-entra-directory-tenant-id"
+gwchat_bff_client_id     = "replace-with-bff-application-client-id"
+agent_api_client_id      = "replace-with-agent-api-application-client-id"
+m365_mcp_client_id       = "replace-with-m365-mcp-application-client-id"
+
+# Set these after exporting the KMS public certificates and receiving
+# confirmation that Entra uploaded those exact certificates.
+# agent_api_certificate_thumbprint = "replace-with-base64url-sha256-thumbprint"
+# m365_mcp_certificate_thumbprint   = "replace-with-base64url-sha256-thumbprint"

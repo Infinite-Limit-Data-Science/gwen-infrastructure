@@ -1,0 +1,3 @@
+# The bootstrap stack intentionally starts with local state. After creation,
+# protect and back up this small state separately; it cannot use its own bucket
+# before that bucket exists.
