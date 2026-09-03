@@ -1,6 +1,6 @@
 variable "aws_profile" {
   type    = string
-  default = "atlantic_genetics"
+  default = "default"
 }
 
 variable "aws_region" {

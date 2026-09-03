@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TF="${TERRAFORM_BIN:-terraform}"
-AWS_PROFILE="${AWS_PROFILE:-atlantic_genetics}"
+AWS_PROFILE="${AWS_PROFILE:-default}"
 AWS_REGION="${AWS_REGION:-us-east-1}"
 CERT_DIR="${CERT_DIR:-${ROOT_DIR}/.certs}"
 

@@ -1,4 +1,4 @@
-aws_profile       = "atlantic_genetics"
+aws_profile       = "default"
 aws_region        = "us-east-1"
 state_bucket_name = "replace-with-globally-unique-gwen-terraform-state-bucket"
 force_destroy     = false
