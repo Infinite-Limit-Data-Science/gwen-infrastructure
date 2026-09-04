@@ -46,11 +46,16 @@ Identity has a deliberate two-pass certificate handoff. First obtain the four
 deployed Entra IDs from `gwen-entra` or the target environment's
 Entra team and apply `stacks/identity`. The stack creates two AWS KMS signing
 keys and publishes the identifiers to SSM. Run
-`stacks/identity/scripts/export-kms-certificates.sh` and give only the two
+`stacks/identity/scripts/export_kms_certificates.py` and give only the two
 public `.crt` files to the Entra owner. After they upload those exact
 certificates and confirm the thumbprints, set
 `agent_api_certificate_thumbprint` and `m365_mcp_certificate_thumbprint` and
 apply the AWS identity stack again.
+
+The exporter requires Python 3, Terraform, and AWS CLI. It has no OpenSSL or
+third-party Python dependency and behaves consistently on Linux and macOS. The
+legacy `export-kms-certificates.sh` entry point remains as a compatibility
+wrapper around the Python exporter.
 
 The AWS identity root accepts the four values either through a tenant tfvars
 file or standard Terraform environment variables:
